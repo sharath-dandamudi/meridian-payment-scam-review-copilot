@@ -23,9 +23,10 @@ flowchart LR
     A[Upstream alert] --> B[LangGraph coordinator]
     B --> C[Evidence Agent]
     C --> D[Read-only MCP tools]
+    D -->|Evidence packet| G{Answerability gate<br/>enough evidence + policy support?}
     B --> E[Policy Retrieval Agent]
     E --> F[Hybrid RAG + reranker]
-    F --> G{Answerability gate}
+    F -->|Approved policy support| G
     G -->|Pass| H[Synthesis Agent]
     G -->|Weak evidence| I[Insufficient Evidence]
     H --> J[Nebius structured draft]
