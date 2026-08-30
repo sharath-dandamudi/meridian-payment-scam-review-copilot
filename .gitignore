@@ -1,0 +1,17 @@
+.env
+.env.*
+!.env.example
+.DS_Store
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.streamlit/secrets.toml
+data/raw/
+data/processed/
+data/chroma/
+artifacts/
+logs/
+*.sqlite

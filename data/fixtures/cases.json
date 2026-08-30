@@ -1,0 +1,145 @@
+[
+  {
+    "case_id": "CASE-AU-001",
+    "alert_id": "ALT-001",
+    "alert_type": "unusual_outbound_payment",
+    "account_id": "ACC-1001",
+    "transaction_id": "TX-1005",
+    "reason": "First-time PayID recipient and payment amount exceeds the account's normal outbound-payment range.",
+    "severity": "high",
+    "created_at": "2026-08-28T09:15:00+10:00"
+  },
+  {
+    "case_id": "CASE-AU-002",
+    "alert_id": "ALT-002",
+    "alert_type": "unusual_outbound_payment",
+    "account_id": "ACC-1002",
+    "transaction_id": "TX-2004",
+    "reason": "Rapid onward transfer after multiple unrelated inbound payments.",
+    "severity": "medium",
+    "created_at": "2026-08-28T10:00:00+10:00"
+  },
+  {
+    "case_id": "CASE-AU-003",
+    "alert_id": "ALT-003",
+    "alert_type": "unusual_outbound_payment",
+    "account_id": "ACC-1003",
+    "transaction_id": "TX-3003",
+    "reason": "First-time payee; customer activity otherwise resembles a documented vehicle purchase.",
+    "severity": "low",
+    "created_at": "2026-08-28T11:15:00+10:00"
+  },
+  {
+    "case_id": "CASE-AU-004",
+    "alert_id": "ALT-004",
+    "alert_type": "unusual_outbound_payment",
+    "account_id": "ACC-1004",
+    "transaction_id": "TX-4003",
+    "reason": "Large first-time PayID payment follows an unexpected inbound credit and references an investment opportunity.",
+    "severity": "high",
+    "created_at": "2026-08-28T12:10:00+10:00"
+  },
+  {
+    "case_id": "CASE-AU-005",
+    "alert_id": "ALT-005",
+    "alert_type": "unusual_outbound_payment",
+    "account_id": "ACC-1005",
+    "transaction_id": "TX-5003",
+    "reason": "First-time recipient payment is substantially above the customer's normal digital-payment pattern and references a remote-access support service.",
+    "severity": "high",
+    "created_at": "2026-08-28T12:35:00+10:00"
+  },
+  {
+    "case_id": "CASE-AU-006",
+    "alert_id": "ALT-006",
+    "alert_type": "unusual_outbound_payment",
+    "account_id": "ACC-1006",
+    "transaction_id": "TX-6003",
+    "reason": "New BSB/account recipient and invoice payment exceeds the established outbound-payment baseline.",
+    "severity": "medium",
+    "created_at": "2026-08-28T13:05:00+10:00"
+  },
+  {
+    "case_id": "CASE-AU-007",
+    "alert_id": "ALT-007",
+    "alert_type": "unusual_outbound_payment",
+    "account_id": "ACC-1007",
+    "transaction_id": "TX-7003",
+    "reason": "Multiple small inbound credits are followed by a new-payee PayID transfer above the normal account range.",
+    "severity": "medium",
+    "created_at": "2026-08-28T13:30:00+10:00"
+  },
+  {
+    "case_id": "CASE-AU-008",
+    "alert_id": "ALT-008",
+    "alert_type": "unusual_outbound_payment",
+    "account_id": "ACC-1008",
+    "transaction_id": "TX-8003",
+    "reason": "First-time overseas transfer is above the typical payment amount but has a documented education-fee purpose.",
+    "severity": "low",
+    "created_at": "2026-08-28T14:00:00+10:00"
+  },
+  {
+    "case_id": "CASE-AU-009",
+    "alert_id": "ALT-009",
+    "alert_type": "unusual_outbound_payment",
+    "account_id": "ACC-1009",
+    "transaction_id": "TX-9003",
+    "reason": "New-payee payment follows a change in recurring household-payment behaviour and requires contextual review.",
+    "severity": "low",
+    "created_at": "2026-08-28T14:25:00+10:00"
+  },
+  {
+    "case_id": "CASE-AU-010", "alert_id": "ALT-010", "alert_type": "unusual_outbound_payment", "account_id": "ACC-1010", "transaction_id": "TX-10003", "reason": "First-time PayID recipient and unusually large payment references an urgent government refund service.", "severity": "high", "created_at": "2026-08-28T14:45:00+10:00"
+  },
+  {
+    "case_id": "CASE-AU-011", "alert_id": "ALT-011", "alert_type": "unusual_outbound_payment", "account_id": "ACC-1011", "transaction_id": "TX-11003", "reason": "Large first-time recipient payment references an online investment platform and exceeds the account baseline.", "severity": "high", "created_at": "2026-08-28T15:05:00+10:00"
+  },
+  {
+    "case_id": "CASE-AU-012", "alert_id": "ALT-012", "alert_type": "unusual_outbound_payment", "account_id": "ACC-1012", "transaction_id": "TX-12003", "reason": "New BSB/account recipient was used for a changed supplier invoice above normal outbound payment behaviour.", "severity": "medium", "created_at": "2026-08-28T15:25:00+10:00"
+  },
+  {
+    "case_id": "CASE-AU-013", "alert_id": "ALT-013", "alert_type": "unusual_outbound_payment", "account_id": "ACC-1013", "transaction_id": "TX-13003", "reason": "Rapid outward PayID transfer follows unrelated inbound credits and is inconsistent with normal account activity.", "severity": "medium", "created_at": "2026-08-28T15:45:00+10:00"
+  },
+  {
+    "case_id": "CASE-AU-014", "alert_id": "ALT-014", "alert_type": "unusual_outbound_payment", "account_id": "ACC-1014", "transaction_id": "TX-14003", "reason": "First-time overseas education-fee payment is above the normal range but has a documented study purpose.", "severity": "low", "created_at": "2026-08-28T16:05:00+10:00"
+  },
+  {
+    "case_id": "CASE-AU-015", "alert_id": "ALT-015", "alert_type": "unusual_outbound_payment", "account_id": "ACC-1015", "transaction_id": "TX-15003", "reason": "New PayID payee payment is substantially above the customer's normal digital payment range.", "severity": "medium", "created_at": "2026-08-28T16:25:00+10:00"
+  },
+  {
+    "case_id": "CASE-AU-016", "alert_id": "ALT-016", "alert_type": "unusual_outbound_payment", "account_id": "ACC-1016", "transaction_id": "TX-16003", "reason": "Unusual BSB/account transfer follows an emailed request to update a supplier payment destination.", "severity": "high", "created_at": "2026-08-28T16:45:00+10:00"
+  },
+  {
+    "case_id": "CASE-AU-017", "alert_id": "ALT-017", "alert_type": "unusual_outbound_payment", "account_id": "ACC-1017", "transaction_id": "TX-17003", "reason": "First-time PayID payment references a cryptocurrency investment opportunity and exceeds normal activity.", "severity": "high", "created_at": "2026-08-28T17:05:00+10:00"
+  },
+  {
+    "case_id": "CASE-AU-018", "alert_id": "ALT-018", "alert_type": "unusual_outbound_payment", "account_id": "ACC-1018", "transaction_id": "TX-18003", "reason": "New recipient payment references remote access support and is materially above the account baseline.", "severity": "high", "created_at": "2026-08-28T17:25:00+10:00"
+  },
+  {
+    "case_id": "CASE-AU-019", "alert_id": "ALT-019", "alert_type": "unusual_outbound_payment", "account_id": "ACC-1019", "transaction_id": "TX-19003", "reason": "First-time BSB/account payee payment resembles a documented vehicle purchase but exceeds usual payment amounts.", "severity": "low", "created_at": "2026-08-28T17:45:00+10:00"
+  },
+  {
+    "case_id": "CASE-AU-020", "alert_id": "ALT-020", "alert_type": "unusual_outbound_payment", "account_id": "ACC-1020", "transaction_id": "TX-20003", "reason": "Multiple inbound credits are followed by a rapid transfer to a first-time PayID recipient.", "severity": "medium", "created_at": "2026-08-28T18:05:00+10:00"
+  },
+  {
+    "case_id": "CASE-CTRL-001",
+    "alert_id": "CTRL-001",
+    "alert_type": "unusual_outbound_payment",
+    "account_id": "ACC-1001",
+    "transaction_id": "TX-CONTROL-MISSING",
+    "reason": "Control test: the alerted transaction source is unavailable, so evidence cannot be verified.",
+    "severity": "high",
+    "created_at": "2026-08-29T09:00:00+10:00"
+  },
+  {
+    "case_id": "CASE-CTRL-002",
+    "alert_id": "CTRL-002",
+    "alert_type": "unusual_outbound_payment",
+    "account_id": "ACC-1001",
+    "transaction_id": "TX-1005",
+    "reason": "Control test: approved-policy source is unavailable after bounded retry and fallback checks.",
+    "severity": "high",
+    "created_at": "2026-08-29T09:05:00+10:00"
+  }
+]

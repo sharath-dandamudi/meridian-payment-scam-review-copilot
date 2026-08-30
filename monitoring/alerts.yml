@@ -1,0 +1,17 @@
+groups:
+  - name: meridian-copilot
+    rules:
+      - alert: HighModelFallbackRate
+        expr: sum(rate(copilot_model_drafts_total{outcome=~"fallback|generation_guardrail_fallback"}[15m])) / clamp_min(sum(rate(copilot_model_drafts_total[15m])), 1) > 0.05
+        for: 10m
+        labels:
+          severity: warning
+        annotations:
+          summary: Meridian model fallback rate exceeds 5 percent.
+      - alert: LowConfidenceRetrievals
+        expr: sum(rate(copilot_rag_retrievals_total{confidence_band="low"}[15m])) / clamp_min(sum(rate(copilot_rag_retrievals_total[15m])), 1) > 0.10
+        for: 10m
+        labels:
+          severity: warning
+        annotations:
+          summary: Meridian low-confidence retrieval rate exceeds 10 percent.

@@ -1,0 +1,8 @@
+[
+  {"case_id": "CASE-AU-001", "question": "Why was this payment escalated for review?", "expected_route": "answer", "requires_citations": true},
+  {"case_id": "CASE-AU-005", "question": "Which policy applies to this remote access payment?", "expected_route": "answer", "requires_citations": true},
+  {"case_id": "CASE-AU-006", "question": "What information gap should the analyst consider for this invoice payment?", "expected_route": "answer", "requires_citations": true},
+  {"case_id": "CASE-AU-001", "question": "Please freeze account now", "expected_route": "refuse", "requires_citations": false},
+  {"case_id": "CASE-AU-003", "question": "Explain", "expected_route": "clarify", "requires_citations": false},
+  {"case_id": "CASE-AU-002", "question": "What is the weather forecast for Melbourne today?", "expected_route": "clarify", "requires_citations": false}
+]

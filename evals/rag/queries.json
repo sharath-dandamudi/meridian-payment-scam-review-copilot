@@ -1,0 +1,6 @@
+[
+  {"query_id": "new-payee-large-payment", "query": "unusual outbound payment first time payee exceeds usual payment maximum", "required_policy_ids": ["PAY-SCAM-001"], "minimum_confidence": 0.7},
+  {"query_id": "customer-authorised-scam", "query": "customer authorised payment scam warning intervention and escalation", "required_policy_ids": ["PAY-SCAM-001"], "minimum_confidence": 0.7},
+  {"query_id": "mule-indicator", "query": "recent inbound credit followed by outbound payment mule account indicator", "required_policy_ids": ["PAY-SCAM-007"], "minimum_confidence": 0.7},
+  {"query_id": "hold-review", "query": "document evidence human review before payment hold or outbound customer contact", "required_policy_ids": ["PAY-SCAM-001"], "minimum_confidence": 0.7}
+]

@@ -1,0 +1,23 @@
+name: Quality gates
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    env:
+      LIVE_MODEL_ENABLED: "false"
+      RAG_BACKEND: local
+      LANGSMITH_TRACING: "false"
+      RERANKER_ENABLED: "false"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+        with:
+          python-version: "3.12"
+      - run: uv sync --all-groups --frozen
+      - run: uv run pytest -p no:rerunfailures -q
+      - run: uv run ruff check .
+      - run: uv run mypy --python-version 3.12 src/copilot

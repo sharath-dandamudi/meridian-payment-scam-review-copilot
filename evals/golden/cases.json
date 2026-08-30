@@ -1,0 +1,97 @@
+[
+  {
+    "case_id": "CASE-AU-001",
+    "partition": "development",
+    "expected_route": "human_review",
+    "expected_recommendation": "human_escalation_required",
+    "required_evidence_ids": [
+      "transaction:TX-1005",
+      "account:ACC-1001:baseline",
+      "transaction:TX-1005:payee"
+    ],
+    "required_policy_ids": ["PAY-SCAM-003", "PAY-SCAM-005"]
+  },
+  {
+    "case_id": "CASE-AU-002",
+    "partition": "development",
+    "expected_route": "human_review",
+    "expected_recommendation": "further_investigation_or_monitoring",
+    "required_evidence_ids": [
+      "transaction:TX-2004",
+      "account:ACC-1002:baseline",
+      "transaction:TX-2004:payee"
+    ],
+    "required_policy_ids": ["PAY-SCAM-007"]
+  },
+  {
+    "case_id": "CASE-AU-003",
+    "partition": "holdout",
+    "expected_route": "human_review",
+    "expected_recommendation": "further_investigation_or_monitoring",
+    "required_evidence_ids": [
+      "transaction:TX-3003",
+      "account:ACC-1003:baseline",
+      "transaction:TX-3003:payee"
+    ],
+    "required_policy_ids": ["PAY-SCAM-008"]
+  },
+  {
+    "case_id": "CASE-AU-004",
+    "partition": "development",
+    "expected_route": "human_review",
+    "expected_recommendation": "human_escalation_required",
+    "required_evidence_ids": ["transaction:TX-4003", "account:ACC-1004:baseline", "transaction:TX-4003:payee"],
+    "required_policy_ids": ["PAY-SCAM-005"]
+  },
+  {
+    "case_id": "CASE-AU-005",
+    "partition": "development",
+    "expected_route": "human_review",
+    "expected_recommendation": "human_escalation_required",
+    "required_evidence_ids": ["transaction:TX-5003", "account:ACC-1005:baseline", "transaction:TX-5003:payee"],
+    "required_policy_ids": ["PAY-SCAM-004"]
+  },
+  {
+    "case_id": "CASE-AU-006",
+    "partition": "development",
+    "expected_route": "human_review",
+    "expected_recommendation": "further_investigation_or_monitoring",
+    "required_evidence_ids": ["transaction:TX-6003", "account:ACC-1006:baseline", "transaction:TX-6003:payee"],
+    "required_policy_ids": ["PAY-SCAM-006"]
+  },
+  {
+    "case_id": "CASE-AU-007",
+    "partition": "holdout",
+    "expected_route": "human_review",
+    "expected_recommendation": "further_investigation_or_monitoring",
+    "required_evidence_ids": ["transaction:TX-7003", "account:ACC-1007:baseline", "transaction:TX-7003:payee"],
+    "required_policy_ids": ["PAY-SCAM-007"]
+  },
+  {
+    "case_id": "CASE-AU-008",
+    "partition": "holdout",
+    "expected_route": "human_review",
+    "expected_recommendation": "further_investigation_or_monitoring",
+    "required_evidence_ids": ["transaction:TX-8003", "account:ACC-1008:baseline", "transaction:TX-8003:payee"],
+    "required_policy_ids": ["PAY-SCAM-008"]
+  },
+  {
+    "case_id": "CASE-AU-009",
+    "partition": "holdout",
+    "expected_route": "human_review",
+    "expected_recommendation": "further_investigation_or_monitoring",
+    "required_evidence_ids": ["transaction:TX-9003", "account:ACC-1009:baseline", "transaction:TX-9003:payee"],
+    "required_policy_ids": ["PAY-SCAM-008"]
+  },
+  {"case_id":"CASE-AU-010","partition":"development","expected_route":"human_review","expected_recommendation":"human_escalation_required","required_evidence_ids":["transaction:TX-10003","account:ACC-1010:baseline","transaction:TX-10003:payee"],"required_policy_ids":["PAY-SCAM-003"]},
+  {"case_id":"CASE-AU-011","partition":"development","expected_route":"human_review","expected_recommendation":"human_escalation_required","required_evidence_ids":["transaction:TX-11003","account:ACC-1011:baseline","transaction:TX-11003:payee"],"required_policy_ids":["PAY-SCAM-005"]},
+  {"case_id":"CASE-AU-012","partition":"development","expected_route":"human_review","expected_recommendation":"further_investigation_or_monitoring","required_evidence_ids":["transaction:TX-12003","account:ACC-1012:baseline","transaction:TX-12003:payee"],"required_policy_ids":["PAY-SCAM-006"]},
+  {"case_id":"CASE-AU-013","partition":"development","expected_route":"human_review","expected_recommendation":"further_investigation_or_monitoring","required_evidence_ids":["transaction:TX-13003","account:ACC-1013:baseline","transaction:TX-13003:payee"],"required_policy_ids":["PAY-SCAM-007"]},
+  {"case_id":"CASE-AU-014","partition":"holdout","expected_route":"human_review","expected_recommendation":"further_investigation_or_monitoring","required_evidence_ids":["transaction:TX-14003","account:ACC-1014:baseline","transaction:TX-14003:payee"],"required_policy_ids":["PAY-SCAM-008"]},
+  {"case_id":"CASE-AU-015","partition":"holdout","expected_route":"human_review","expected_recommendation":"further_investigation_or_monitoring","required_evidence_ids":["transaction:TX-15003","account:ACC-1015:baseline","transaction:TX-15003:payee"],"required_policy_ids":["PAY-SCAM-003"]},
+  {"case_id":"CASE-AU-016","partition":"holdout","expected_route":"human_review","expected_recommendation":"human_escalation_required","required_evidence_ids":["transaction:TX-16003","account:ACC-1016:baseline","transaction:TX-16003:payee"],"required_policy_ids":["PAY-SCAM-001"]},
+  {"case_id":"CASE-AU-017","partition":"holdout","expected_route":"human_review","expected_recommendation":"human_escalation_required","required_evidence_ids":["transaction:TX-17003","account:ACC-1017:baseline","transaction:TX-17003:payee"],"required_policy_ids":["PAY-SCAM-005"]},
+  {"case_id":"CASE-AU-018","partition":"holdout","expected_route":"human_review","expected_recommendation":"human_escalation_required","required_evidence_ids":["transaction:TX-18003","account:ACC-1018:baseline","transaction:TX-18003:payee"],"required_policy_ids":["PAY-SCAM-001"]},
+  {"case_id":"CASE-AU-019","partition":"holdout","expected_route":"human_review","expected_recommendation":"further_investigation_or_monitoring","required_evidence_ids":["transaction:TX-19003","account:ACC-1019:baseline","transaction:TX-19003:payee"],"required_policy_ids":["PAY-SCAM-008"]},
+  {"case_id":"CASE-AU-020","partition":"holdout","expected_route":"human_review","expected_recommendation":"further_investigation_or_monitoring","required_evidence_ids":["transaction:TX-20003","account:ACC-1020:baseline","transaction:TX-20003:payee"],"required_policy_ids":["PAY-SCAM-007"]}
+]
