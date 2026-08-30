@@ -20,19 +20,23 @@ The copilot is decision support, not an autonomous fraud-decision system. It can
 
 ```mermaid
 flowchart LR
-    A[Upstream alert] --> B[LangGraph coordinator]
-    B --> C[Evidence Agent]
-    C --> D[Read-only MCP tools]
-    D -->|Evidence packet| G{Answerability gate<br/>enough evidence + policy support?}
-    B --> E[Policy Retrieval Agent]
-    E --> F[Hybrid RAG + reranker]
-    F -->|Approved policy support| G
-    G -->|Pass| H[Synthesis Agent]
-    G -->|Weak evidence| I[Insufficient Evidence]
-    H --> J[Nebius structured draft]
-    J --> K[Grounding and safety gates]
-    K -->|Pass| L[Human analyst review]
-    K -->|Fail| I
+    A[Upstream alert] --> B[1. Validate alert<br/>structure and required references]
+
+    B --> C[2. Evidence Agent<br/>collect case evidence]
+    C --> D[Read-only MCP-style tools<br/>alert - transaction - customer context]
+
+    D --> E[3. Policy Retrieval Agent<br/>retrieve approved policy]
+    E --> F[Hybrid RAG + cross-encoder reranker]
+
+    F --> G{4. Answerability gate<br/>enough evidence + policy support?}
+
+    G -->|No| H[Insufficient Evidence<br/>safe stop / human follow-up]
+    G -->|Yes| I[5. Synthesis Agent<br/>structured review brief]
+
+    I --> J[6. Grounding and safety gates<br/>evidence - citations - confidence - PII - prohibited actions]
+
+    J -->|Pass| K[7. Prepare Human Review<br/>analyst makes final decision]
+    J -->|Fail| H
 ```
 
 The upstream monitoring system, rather than Meridian, creates the initial alert. Meridian is the
