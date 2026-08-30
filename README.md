@@ -147,7 +147,7 @@ a runtime decision-maker.
 
 For a containerised API build, use `docker build -t meridian-copilot .` and provide secrets only as
 runtime environment variables. See [the runbook](docs/runbook.md), [architecture](docs/architecture.md),
-[demo guide](docs/demo.md), and [stakeholder discussion guide](docs/interview_qa.md).
+[demo guide](docs/demo.md), and [stakeholder discussion guide](docs/stakeholder_discussion_guide.md).
 
 ## Production-minded local stack
 
